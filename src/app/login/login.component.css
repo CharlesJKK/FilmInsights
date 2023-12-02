@@ -1,0 +1,84 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.title {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.left-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.left-box img {
+    position: absolute;
+    max-width: 200px;
+    top: 0;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-self: center; 
+    width: 70%;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 80px;
+  }
+  
+  .login-box input {
+    max-width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    margin-bottom: 80px;
+  }
+  
+  .login-box input::placeholder {
+    color: #BB1414;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(197, 25, 25);
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 16px;
+    font-size: 16px;
+  }
+
+.popcorn-box {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #BB1414;
+    border-radius: 15px;
+}
+
+.popcorn-box img{
+    max-width: 100%;
+    height: auto;
+}
