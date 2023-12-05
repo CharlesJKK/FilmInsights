@@ -6,10 +6,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HeaderModule } from './components/header/header.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     CommonModule,
     RouterOutlet,
-    AppRoutingModule
+    AppRoutingModule,
+    HeaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

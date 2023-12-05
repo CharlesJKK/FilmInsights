@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from '../../environment';
 
@@ -14,7 +14,7 @@ export class ApiService {
   private apiKey = environment.apiKey
 
   get(endpoint: string) : Observable<any> {
-    const url = `${this.baseUrl}${endpoint}?api_key=${this.apiKey}`
+    const url = `${this.baseUrl}${endpoint}?api_key=${this.apiKey}&language=pt-BR`
     return this.http.get(url)
   }
 

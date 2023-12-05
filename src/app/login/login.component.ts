@@ -53,7 +53,7 @@ export class LoginComponent implements OnInit {
   }
 
   navigateToHome() {
-    this.router.navigate(['/home'])
+    this.router.navigate(['/films'])
   }
 }
 

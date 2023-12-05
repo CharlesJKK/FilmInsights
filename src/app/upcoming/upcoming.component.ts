@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ApiService } from '../service/service/api.service';
 import { FilmListModule } from '../components/filmList/film-list.module';
 import { HeaderModule } from '../components/header/header.module';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-upcoming',
   standalone: true,
   imports: [RouterModule, FilmListModule, HeaderModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  templateUrl: './upcoming.component.html',
+  styleUrl: './upcoming.component.css'
 })
-export class HomeComponent {}
+export class UpcomingComponent {
+
+}
